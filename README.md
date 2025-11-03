@@ -1,5 +1,11 @@
 # ELEC5305 — HD-Level Final Project (UrbanSound8K Automobile Sounds)
 
+# ELEC5305 — HD Final Project (Automobile Sound Recognition)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UmBXJsQaG0xNVGXPCGg-ejU4b0tel4ij?usp=sharing)
+*(Click the badge above to launch the full notebook in Google Colab)*  
+
+
 **Author:** Tushar Manish Khupte (SID: 520330504)
 **Unit:** ELEC5305 — Audio Processing & DSP, The University of Sydney
 
@@ -45,7 +51,7 @@ content/
  │       ├─ some_examples_Feature-Space_Reconstruction/ # mel recon (WAVs)
  │       └─ audio_pairs/          # input vs processed outputs + index.csv + README.md
  └─ us8k_cache/                   # cached mels, etc.
-elec5305_hd_final_project.py      # main script
+ultrasound_8k_Baseline_final_project.py      # main script
 ```
 
 > If your folder names differ slightly, adjust the links below accordingly.
@@ -83,7 +89,7 @@ pip install numpy==2.2.2 librosa==0.10.2.post1 soundfile==0.12.1 \
 ### 1) Train (default)
 
 ```bash
-python elec5305_hd_final_project.py
+python ultrasound_8k_Baseline_final_project.py
 ```
 
 * Uses folds: train=1–8, val=9, test=10
@@ -121,7 +127,7 @@ content/outputs/examples/audio_pairs/
 ### 4) Inference helpers (inside Python)
 
 ```python
-from elec5305_hd_final_project import predict_file, batch_infer
+from ultrasound_8k_Baseline_final_project import predict_file, batch_infer
 predict_file("path/to/custom.wav")
 batch_infer("folder/with/wavs")   # writes custom_batch_predictions.csv
 ```
@@ -151,11 +157,8 @@ batch_infer("folder/with/wavs")   # writes custom_batch_predictions.csv
 
 **Global performance (test fold=10):** see `content/outputs/metrics.json` for full `classification_report`.
 
-**Figures (ready for the report):**
+**Figure (ready for the report):**
 
-* Loss: ![Loss](content/outputs/plot_loss.png)
-* Accuracy: ![Accuracy](content/outputs/plot_accuracy.png)
-* Macro-F1: ![Macro-F1](content/outputs/plot_macro_f1.png)
 * Confusion Matrix: ![Confusion](content/outputs/confusion_matrix.png)
 
 **Mistake analysis (qualitative):**
@@ -233,7 +236,7 @@ Edit `CFG = {...}` at the top of `ultrasound_8k_Baseline_final_project.py`:
 ## ❓FAQ
 
 **Q: I don’t see audio pairs after training.**
-A: Run: `python elec5305_hd_final_project.py --audio 2` (adjust `2` to export N examples per class).
+A: Run: `ultrasound_8k_Baseline_final_project.py --audio 2` (adjust `2` to export N examples per class).
 
 **Q: GitHub won’t play an audio file in-place.**
 A: Open the WAV in a new tab or download; or browse the embedded gallery inside `audio_pairs/README.md`.
