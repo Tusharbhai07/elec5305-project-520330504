@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local caches & temp
+us8k_cache/
+*_cache/
+.DS_Store
+Thumbs.db
+
+# Datasets (downloaded automatically)
+content/UrbanSound8K/
+content/_dl/
+
+# (Keep outputs so markers can see results)
+# DO NOT ignore: content/outputs/**

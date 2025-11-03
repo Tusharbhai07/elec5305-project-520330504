@@ -1,0 +1,5 @@
+file,path,true,pred,spectrogram_png
+102103-3-0-0.wav,/content/UrbanSound8K/audio/fold10/102103-3-0-0.wav,dog_bark,car_horn,/content/outputs/examples/test_mistakes/102103-3-0-0__true-dog_bark__pred-car_horn.png
+102103-3-1-0.wav,/content/UrbanSound8K/audio/fold10/102103-3-1-0.wav,dog_bark,car_horn,/content/outputs/examples/test_mistakes/102103-3-1-0__true-dog_bark__pred-car_horn.png
+118278-4-0-0.wav,/content/UrbanSound8K/audio/fold10/118278-4-0-0.wav,drilling,engine_idling,/content/outputs/examples/test_mistakes/118278-4-0-0__true-drilling__pred-engine_idling.png
+118278-4-0-1.wav,/content/UrbanSound8K/audio/fold10/118278-4-0-1.wav,drilling,siren,/content/outputs/examples/test_mistakes/118278-4-0-1__true-drilling__pred-siren.png
