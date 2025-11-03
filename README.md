@@ -1,6 +1,6 @@
-# ELEC5305 — HD-Level Final Project (UrbanSound8K Automobile Sounds)
+# ELEC5305 — Final Project (UrbanSound8K Automobile Sounds)
 
-# ELEC5305 — HD Final Project (Automobile Sound Recognition)
+# ELEC5305 — Project (Automobile Sound Recognition)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UmBXJsQaG0xNVGXPCGg-ejU4b0tel4ij?usp=sharing)
 *(Click the badge above to launch the full notebook in Google Colab)*  
