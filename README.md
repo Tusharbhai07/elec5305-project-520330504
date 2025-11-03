@@ -38,9 +38,6 @@ content/
  │   ├─ training_log.csv
  │   ├─ metrics.json
  │   ├─ confusion_matrix.png     # + confusion_matrix.csv
- │   ├─ plot_loss.png
- │   ├─ plot_accuracy.png
- │   ├─ plot_macro_f1.png
  │   └─ examples/
  │       ├─ val_spectrograms/    # example spectrograms (validation)
  │       ├─ test_spectrograms/   # example spectrograms (test)
@@ -104,8 +101,7 @@ python ultrasound_8k_Baseline_final_project.py --plot
 
 Creates/refreshes:
 
-* `plot_loss.png`, `plot_accuracy.png`, `plot_macro_f1.png`
-* Regenerates `confusion_matrix.png` from CSV if present.
+* Regenerates `confusion_matrix.png` from CSV.
 
 ### 3) Export *audio pairs* (matched inputs vs processed outputs)
 
