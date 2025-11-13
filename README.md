@@ -2,7 +2,7 @@
 
 # ELEC5305 — Project (Automobile Sound Recognition)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UmBXJsQaG0xNVGXPCGg-ejU4b0tel4ij?usp=sharing)
+[![Open In Colab]https://colab.research.google.com/drive/1tQ3kxnaScF5GZLx7VYJQ2cxjm3pbHZN9?usp=sharing
 *(Click the badge above to launch the full notebook in Google Colab)*  
 
 
