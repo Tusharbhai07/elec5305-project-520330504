@@ -269,9 +269,34 @@ Browse these folders in GitHub and click any `.wav` file to listen:
 
 ### 🗃️ All Artifacts (ZIP)
 
-If you just want everything in one go:
+---
 
-- [Download all outputs as ZIP](outputs.zip)
+## 🧩 Models Included in This Repository
+
+This project contains **two complete models** — the baseline MFCC+CNN and the proposed CNN–BiLSTM hybrid — each with metrics, plots.
+
+### 1️⃣ **Baseline Model — TinyCNNWithAux (MFCC/CNN)**  
+
+
+- **Outputs (ZIP):**  
+  👉 [`hassan_baseline_outputs.zip`](hassan_baseline_outputs.zip)
+
+- **Summary:**  
+  Compact CNN using MFCC/log-mel input. Serves as the reference point for performance comparison in the report.
+
+---
+
+### 2️⃣ **Final Model — CNN → BiLSTM + Auxiliary Features**  
+My proposed model with log-mel input + temporal modeling.
+
+
+- **Outputs (ZIP):**  
+  👉 [`outputs.zip`](outputs.zip)
+
+- **Summary:**  
+  Hybrid architecture combining CNN feature extraction, BiLSTM temporal modeling, auxiliary features (ZCR, RMS, ModSpec, LPC), and macro-F1–based early stopping. Produces all metrics, plots, and audio explainability bundles.
+
+
 
 ---
 ## 🧠 Model & Design Summary
