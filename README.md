@@ -232,6 +232,40 @@ This combination of **numbers + plots + audio** supports both quantitative and q
 
 ---
 
+
+## 🔗 Quick Links — Plots, Logs & Audio (click inside GitHub)
+
+### 📈 Key Plots
+
+- [Confusion Matrix](content/outputs/confusion_matrix.png)
+- [Accuracy vs Epoch](content/outputs/plot_accuracy.png)
+- [Loss vs Epoch](content/outputs/plot_loss.png)
+- [Macro-F1 vs Epoch](content/outputs/plot_macro_f1.png)
+- [Per-Class F1 Bar Plot](content/outputs/plot_per_class_f1.png)
+
+### 📑 Metrics & Logs
+
+- [Training Log (CSV)](content/outputs/training_log.csv)
+- [Final Metrics (JSON)](content/outputs/metrics.json)
+- [Best Model Checkpoint (`best.pt`)](content/outputs/best.pt)
+
+### 🔊 Example Audio Folders
+
+Browse these folders in GitHub and click any `.wav` file to listen:
+
+- [Raw Input Examples](content/outputs/examples/some_examples_raw_Audio_INPUT/)
+- [Denoised Output Examples](content/outputs/examples/some_examples_denoised_audio_OUTPUT/)
+- [Mel-Reconstruction (Feature-Space)](content/outputs/examples/some_examples_Feature-Space_Reconstruction/)
+- [Matched Audio Pairs (Input → Denoised → Mel-Recon)](content/outputs/examples/audio_pairs/)
+- [Misclassified Test Clips](content/outputs/examples/test_mistakes_audio/)
+
+### 🗃️ All Artifacts (ZIP)
+
+If you just want everything in one go:
+
+- [Download all outputs as ZIP](outputs.zip)
+
+---
 ## 🧠 Model & Design Summary
 
 ### Baseline
