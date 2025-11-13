@@ -276,7 +276,8 @@ Browse these folders in GitHub and click any `.wav` file to listen:
 This project contains **two complete models** — the baseline MFCC+CNN and the proposed CNN–BiLSTM hybrid — each with metrics, plots.
 
 ### 1️⃣ **Baseline Model — TinyCNNWithAux (MFCC/CNN)**  
-
+The baseline MFCC+CNN model used for comparison was adapted from  
+Hassan’s implementation [6].
 
 - **Outputs (ZIP):**  
   👉 [`hassan_baseline_outputs.zip`](hassan_baseline_outputs.zip)
@@ -389,6 +390,11 @@ This ensures the **report, README, and repository are fully consistent**.
 
 5. ELEC5305 Lecture Notes,
    *Audio Feature Extraction, Deep Learning for Audio, and Evaluation Metrics*.
+
+6. H. M. Khan, *Urban Sound Classification Using Convolutional Neural Networks*,  
+   GitHub Repository, 2021.  
+   <https://github.com/HassanMahmoodKhan/Urban-Sound-Classification-using-Convolutional-Neural-Networks>
+
 
 ---
 
