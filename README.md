@@ -87,7 +87,7 @@ content/
  │   └─ ...
  └─ us8k_cache/                 # Cached features to speed up future runs
 
-ultrasound_8k_baseline_final_project.py   # Main training / evaluation / export script
+ultrasound8k_final_baseline(cnn_bilstm)_.py   # Main training / evaluation / export script
 
 outputs.zip                               # Zipped copy of the outputs/ directory (for markers)
 .gitattributes
@@ -160,7 +160,7 @@ Ensure your environment and dataset are set up (see sections above), then:
 ### 1. Train (and evaluate) the model
 
 ```bash
-python ultrasound_8k_baseline_final_project.py
+ultrasound8k_final_baseline(cnn_bilstm)_.py
 ```
 
 Typical behaviour:
@@ -180,7 +180,7 @@ Typical behaviour:
 If the script supports a plotting-only mode (no retraining), you can re-generate plots from existing logs:
 
 ```bash
-python ultrasound_8k_baseline_final_project.py --plot
+python ultrasound8k_final_baseline(cnn_bilstm)_.py --plot
 ```
 
 ### 3. Export audio pairs / examples
@@ -188,7 +188,7 @@ python ultrasound_8k_baseline_final_project.py --plot
 To export matched audio examples (input → processed → reconstruction) and misclassified clips, use the provided audio export option:
 
 ```bash
-python ultrasound_8k_baseline_final_project.py --audio 2
+python ultrasound8k_final_baseline(cnn_bilstm)_.py --audio 2
 ```
 
 This will populate subfolders under:
