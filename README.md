@@ -31,23 +31,23 @@ The project includes:
 # 🎧 Key Outputs
 
 ## 📊 Confusion Matrix
-<img src="../content/outputs/confusion_matrix.png" width="650"/>
+<img src="/elec5305-project-520330504/content/outputs/confusion_matrix.png">
 
 ---
 
 ## 📈 Training Curves
 
 ### **Accuracy**
-<img src="../content/outputs/plot_accuracy.png" width="650"/>
+<img src="/elec5305-project-520330504/content/outputs/plot_accuracy.png" width="650"/>
 
 ### **Loss**
-<img src="../content/outputs/plot_loss.png" width="650"/>
+<img src="/elec5305-project-520330504/content/outputs/plot_loss.png" width="650"/>
 
 ### **Macro-F1**
-<img src="../content/outputs/plot_macro_f1.png" width="650"/>
+<img src="/elec5305-project-520330504/content/outputs/plot_macro_f1.png" width="650"/>
 
 ### **Per-Class F1**
-<img src="../content/outputs/plot_per_class_f1.png" width="650"/>
+<img src="/elec5305-project-520330504/content/outputs/plot_per_class_f1.png" width="650"/>
 
 ---
 
