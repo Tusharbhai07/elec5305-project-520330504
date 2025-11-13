@@ -6,6 +6,14 @@
 
 [![Open In Colab](https://img.shields.io/badge/Open%20In%20Colab-Deep%20Learning%20Notebook-orange?logo=googlecolab)](https://colab.research.google.com/drive/1tQ3kxnaScF5GZLx7VYJQ2cxjm3pbHZN9?usp=sharing)
 
+### 📦 Model Implementations
+
+| Model Name | Description | Code Link |
+|-----------|-------------|-----------|
+| TinyCNNWithAux | Baseline CNN model using MFCC/log-mel features | [![Open In Colab](https://img.shields.io/badge/Open%20In%20Colab-Deep%20Learning%20Notebook-orange?logo=googlecolab)](https://colab.research.google.com/drive/1OrVxXP27fIkz52uoJwYzG3U4Di4Y6LOY?usp=sharing) |
+| CNN–BiLSTM | Proposed hybrid architecture | [![Open In Colab](https://img.shields.io/badge/Open%20In%20Colab-Deep%20Learning%20Notebook-orange?logo=googlecolab)](https://colab.research.google.com/drive/1tQ3kxnaScF5GZLx7VYJQ2cxjm3pbHZN9?usp=sharing) |
+
+
 > Reproducible end-to-end **UrbanSound8K** pipeline with a focus on **automobile-related sounds**  
 > (e.g. car horn, engine idling, siren), including training code, metrics, plots, and audio examples.
 
