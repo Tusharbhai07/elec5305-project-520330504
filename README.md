@@ -1,7 +1,7 @@
 # ELEC5305 — UrbanSound8K Automobile Sound Recognition
 
 **Author:** Tushar Manish Khupte (SID: 520330504)  
-**Unit:** ELEC5305 — Audio Processing & DSP  
+**Unit:** ELEC5305 — Acoustics, Speech and Signal Processing 
 **The University of Sydney**
 
 [![Open In Colab](https://img.shields.io/badge/Open%20In%20Colab-Deep%20Learning%20Notebook-orange?logo=googlecolab)](https://colab.research.google.com/drive/1tQ3kxnaScF5GZLx7VYJQ2cxjm3pbHZN9?usp=sharing)
