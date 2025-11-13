@@ -1,159 +1,144 @@
-# ⭐ **docs/index.md (Homepage)**
-
 ````markdown
----
-title: ELEC5305 UrbanSound8K Automobile Sound Recognition
----
-
-# 🔊 ELEC5305 — Automobile Sound Recognition  
-### **Hybrid CNN–BiLSTM Model with Auxiliary Features**  
+# 🔊 ELEC5305 — UrbanSound8K Automobile Sound Recognition  
+### Hybrid CNN–BiLSTM Model with Auxiliary Acoustic Features  
 **Author:** Tushar Manish Khupte (SID: 520330504)  
-**Unit:** ELEC5305 – Audio Processing & DSP (The University of Sydney)
+**The University of Sydney — ELEC5305 (Audio & DSP)**
 
-[![Open In Colab](https://img.shields.io/badge/Open%20In%20Colab-Deep%20Learning%20Notebook-orange?logo=googlecolab)](https://colab.research.google.com/drive/1tQ3kxnaScF5GZLx7VYJQ2cxjm3pbHZN9?usp=sharing)
-
----
-
-## 📘 Overview
-
-This project implements a **reproducible, end-to-end UrbanSound8K classification pipeline** focused on *automobile-related sounds* (car horn, engine idling, siren).  
-The final model uses:
-
-✔ Log-mel spectrograms  
-✔ Modulation spectrum summary  
-✔ LPC coefficients  
-✔ **CNN → BiLSTM** architecture  
-✔ Early stopping using **macro-F1**  
-✔ Example-matched audio (input, denoised, mel-reconstructed)
-
-All training artifacts are auto-exported as figures, CSV logs, WAVs, and model checkpoints.
+[![Open In Colab](https://img.shields.io/badge/Open%20in%20Colab-Notebook-orange?logo=googlecolab)](https://colab.research.google.com/drive/1tQ3kxnaScF5GZLx7VYJQ2cxjm3pbHZN9?usp=sharing)
 
 ---
 
-# 🎧 Key Outputs  
-Below are the major results from your repository.
+## 📘 Project Overview
+
+This repository contains my **individual ELEC5305 final project**, implementing a **reproducible deep learning pipeline** for UrbanSound8K automobile-related sound classification.
+
+The project focuses on **six key classes**:
+
+- 🚘 **Car Horn**  
+- 🚨 **Siren**  
+- 🔧 **Engine Idling**  
+- 🎵 **Street Music**  
+- 🐶 **Dog Bark**  
+- 🛠️ **Drilling**
+
+### ✔ Core Features
+- Log-mel spectrograms  
+- Auxiliary features (ZCR, RMS, Modulation Spectrum, LPC)  
+- **CNN → BiLSTM hybrid architecture**  
+- Early stopping using **macro-F1**  
+- Dataset-fold evaluation (Train: 1–8, Val: 9, Test: 10)  
+- Automatic export of:
+  - Confusion matrix  
+  - Training curves  
+  - Per-class F1  
+  - Audio examples (raw, denoised, mel-reconstructed)  
 
 ---
 
-## 📊 **Confusion Matrix**
+## 🌐 Project Website (GitHub Pages)
 
-<img src="../content/outputs/confusion_matrix.png" width="600"/>
+👉 **Live Website:**  
+https://tusharbhai07.github.io/elec5305-project-520330504/
 
----
-
-## 📈 Training Curves
-
-### **Accuracy**
-<img src="../content/outputs/plot_accuracy.png" width="600"/>
-
-### **Loss**
-<img src="../content/outputs/plot_loss.png" width="600"/>
-
-### **Macro-F1**
-<img src="../content/outputs/plot_macro_f1.png" width="600"/>
-
-### **Per-Class F1**
-<img src="../content/outputs/plot_per_class_f1.png" width="600"/>
+This contains visuals, plots, audio examples, and a clean academic presentation of the project.
 
 ---
 
-# 🔉 Example Audio (Hear the Model!)
+## 🚀 How to Run the Project
 
-### 🔊 Raw Input Audio  
-Browse:  
-`/content/outputs/examples/some_examples_raw_Audio_INPUT/`
-
-### 🔉 Denoised Output  
-Browse:  
-`/content/outputs/examples/some_examples_denoised_audio_OUTPUT/`
-
-### 🎧 Mel-Reconstruction (What the model “hears”)  
-Browse:  
-`/content/outputs/examples/some_examples_Feature-Space_Reconstruction/`
-
-### 🎼 Matched Audio Pairs (Input → Denoised → Mel-Recon)
-Browse:  
-`/content/outputs/examples/audio_pairs/`
-
----
-
-# 🧠 Model Summary
-
-* **Baseline:** TinyCNNWithAux  
-* **Proposed:** CNN + BiLSTM + Auxiliary Features  
-* **Training folds:** 1–8  
-* **Validation:** 9  
-* **Testing:** 10  
-
-**Best checkpoint:** `content/outputs/best.pt`  
-**Metrics report:** `content/outputs/metrics.json`  
-**Logs:** `content/outputs/training_log.csv`
-
----
-
-# 📦 Repository Structure
-
-```text
-content/
- ├─ UrbanSound8K/                
- ├─ outputs/
- │   ├─ training_log.csv
- │   ├─ metrics.json
- │   ├─ confusion_matrix.png
- │   ├─ examples/
- │       ├─ test_mistakes_audio/
- │       ├─ Feature-Space_Reconstruction/
- │       ├─ audio_pairs/
- │       └─ ...
- └─ us8k_cache/
-Ultrasound8K_Final_Baseline(CNN-BiLSTM)_.py
+### **Train the model**
+```bash
+python ultrasound_8k_baseline_final_project.py
 ````
 
----
+### **Regenerate plots**
 
-# 🚀 How to Run
-
-### Train:
-
-```
-python ultrasound_8k_Baseline_final_project.py
+```bash
+python ultrasound_8k_baseline_final_project.py --plot
 ```
 
-### Regenerate plots:
+### **Export audio example triplets**
 
-```
-python ultrasound_8k_Baseline_final_project.py --plot
-```
-
-### Export audio pairs:
-
-```
-python ultrasound_8k_Baseline_final_project.py --audio 2
+```bash
+python ultrasound_8k_baseline_final_project.py --audio 2
 ```
 
 ---
 
-# 📚 Academic Citation
+## 📦 Repository Structure
 
-If you cite your adapted baseline:
-
-> *This project uses code adapted and expanded from the baseline CNN repository in [24], with a full rewritten version provided here:*
-> [https://colab.research.google.com/drive/1OrVxXP27fIkz52uoJwYzG3U4Di4Y6LOY?usp=sharing](https://colab.research.google.com/drive/1OrVxXP27fIkz52uoJwYzG3U4Di4Y6LOY?usp=sharing)
+```
+├── docs/                       # GitHub Pages website
+│   └── index.md
+│
+├── content/
+│   ├── UrbanSound8K/           # (Dataset not included in repo — user downloads)
+│   ├── outputs/
+│   │   ├── confusion_matrix.png
+│   │   ├── plot_accuracy.png
+│   │   ├── plot_loss.png
+│   │   ├── plot_macro_f1.png
+│   │   ├── plot_per_class_f1.png
+│   │   ├── training_log.csv
+│   │   ├── metrics.json
+│   │   └── examples/
+│   │       ├── some_examples_raw_Audio_INPUT/
+│   │       ├── some_examples_denoised_audio_OUTPUT/
+│   │       ├── some_examples_Feature-Space_Reconstruction/
+│   │       └── audio_pairs/
+│   │
+│   └── us8k_cache/             # Cached MEL + aux features
+│
+├── ultrasound_8k_baseline_final_project.py   # Main training/evaluation script
+└── README.md
+```
 
 ---
 
-# 🙌 Acknowledgements
+## 📊 Key Outputs (Included in `content/outputs/`)
 
-* USYD ELEC5305 teaching staff
-* Open-source libraries (PyTorch, Librosa, Scikit-learn)
+* **Confusion Matrix**
+* **Accuracy Curve**
+* **Loss Curve**
+* **Macro-F1 Curve**
+* **Per-Class F1 Bar Chart**
+* **Audio Example Triplets**
+  (Input → Wiener-denoised → Mel-reconstructed)
+
+---
+
+## 📚 Academic Notes
+
+This project builds on and extends the **baseline CNN code** from:
+
+> H. M. Khan, *Urban Sound Classification Using CNNs*. GitHub, 2021.
+> [https://github.com/HassanMahmoodKhan/Urban-Sound-Classification-using-Convolutional-Neural-Networks](https://github.com/HassanMahmoodKhan/Urban-Sound-Classification-using-Convolutional-Neural-Networks)
+
+All baseline components were **rewritten, expanded, and adapted** into a new reproducible pipeline with:
+
+* Auxiliary features
+* BiLSTM temporal modeling
+* Feature-space audio reconstruction
+* Macro-F1-driven early stopping
+* Automated artifact export
+
+---
+
+## 🙌 Acknowledgements
+
+* **ELEC5305 teaching team** — The University of Sydney
 * UrbanSound8K dataset creators
-
+* PyTorch, Librosa, Scikit-learn
+* GitHub & Google Colab
 
 ---
 
+## 📄 License
+
+**Academic/educational use only.**
+Not intended for commercial deployment.
+
+```
 
 
-
-
-Just tell me!
 
